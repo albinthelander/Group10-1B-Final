@@ -6,12 +6,10 @@ public class Testdrive {
         Volvo240 VolvoCar = new Volvo240("Albins Volvo");
         Saab95 SaabCar = new Saab95("Albins Saab");
         CarTransporter<Car> trans = new CarTransporter<>("Albins CarTransporter", 10);
-        CarTransporter<Car> trans2 = new CarTransporter<>("Albins CarTransporter 2", 10);
 
         //Test drive CarTransporter
 
         trans.lowerBoard();
-        trans2.raiseBoard();
 
         trans.loadStorage(VolvoCar);
         trans.loadStorage(SaabCar);
@@ -23,7 +21,7 @@ public class Testdrive {
         trans.move();
 
         trans.stopEngine();
-        trans.raiseBoard();
+        trans.lowerBoard();
         trans.unloadStorage();
 
         trans.raiseBoard();
